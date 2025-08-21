@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Workshop: Client Archetypes & Content Mapping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="workshop-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="workshop-info">
+                    <h1>Strategic Workshop: Client Archetypes & Content Mapping</h1>
+                    <p class="subtitle">E.M. Perry Group - 2 Hours</p>
+                </div>
+                <div class="session-info">
+                    <div class="timer-display">
+                        <span class="timer-label">Session Time:</span>
+                        <span id="timer">00:00</span>
+                        <button id="startTimer" class="btn btn--sm btn--primary">Start</button>
+                        <button id="resetTimer" class="btn btn--sm btn--outline">Reset</button>
+                    </div>
+                    <div class="team-members">
+                        <span class="member-indicator">Emily</span>
+                        <span class="member-indicator">Neal</span>
+                        <span class="member-indicator">Molly</span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-section="setup">Pre-Workshop Setup</button>
+                <button class="nav-tab" data-section="session1">Session 1: Archetype Deep Dive (45min)</button>
+                <button class="nav-tab" data-section="session2">Session 2: Service Alignment (40min)</button>
+                <button class="nav-tab" data-section="session3">Session 3: Website Structure (20min)</button>
+                <button class="nav-tab" data-section="session4">Session 4: Content Messaging (15min)</button>
+                <button class="nav-tab" data-section="deliverables">Deliverables Dashboard</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Pre-Workshop Setup -->
+            <section id="setup" class="workshop-section active">
+                <h2>Pre-Workshop Setup</h2>
+                <div class="setup-grid">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Preparation Checklist</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="checklist">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check1">
+                                    <span>Review operations infographic</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check2">
+                                    <span>Review client case studies (Remix, Arrakis, Tree Frog)</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check3">
+                                    <span>Set up collaboration tools</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check4">
+                                    <span>Review current service offerings</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Client Examples</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="client-examples">
+                                <div class="client-card">
+                                    <h4>Remix Therapeutics</h4>
+                                    <p class="stage-label">Newly Funded</p>
+                                    <p>Full company setup from employee 8 to scaled operations</p>
+                                </div>
+                                <div class="client-card">
+                                    <h4>Arrakis Therapeutics</h4>
+                                    <p class="stage-label">Office Transition</p>
+                                    <p>Office design, build-out, and operational infrastructure</p>
+                                </div>
+                                <div class="client-card">
+                                    <h4>Tree Frog Therapeutics</h4>
+                                    <p class="stage-label">Scaling Support</p>
+                                    <p>Ongoing fractional support and optimization</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Session 1: Client Archetype Deep Dive -->
+            <section id="session1" class="workshop-section">
+                <h2>Session 1: Client Archetype Deep Dive (45 minutes)</h2>
+                
+                <div class="exercise-container">
+                    <div class="exercise-header">
+                        <h3>Exercise 1: Role-Play Your Clients (20 minutes)</h3>
+                        <p>Embody different client types and voice their concerns</p>
+                    </div>
+                    
+                    <div class="archetype-cards">
+                        <div class="archetype-card">
+                            <h4>Newly Funded Scientist</h4>
+                            <div class="role-play-area">
+                                <div class="form-group">
+                                    <label class="form-label">Authentic Language</label>
+                                    <textarea class="form-control" rows="3" placeholder="How do they speak? What words do they use?"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Fears & Frustrations</label>
+                                    <textarea class="form-control" rows="3" placeholder="What keeps them up at night?"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Desires & Goals</label>
+                                    <textarea class="form-control" rows="3" placeholder="What are they trying to achieve?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="archetype-card">
+                            <h4>Incubator Graduate</h4>
+                            <div class="role-play-area">
+                                <div class="form-group">
+                                    <label class="form-label">Authentic Language</label>
+                                    <textarea class="form-control" rows="3" placeholder="How do they speak? What words do they use?"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Fears & Frustrations</label>
+                                    <textarea class="form-control" rows="3" placeholder="What keeps them up at night?"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Desires & Goals</label>
+                                    <textarea class="form-control" rows="3" placeholder="What are they trying to achieve?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="archetype-card">
+                            <h4>Scaling Biotech CEO</h4>
+                            <div class="role-play-area">
+                                <div class="form-group">
+                                    <label class="form-label">Authentic Language</label>
+                                    <textarea class="form-control" rows="3" placeholder="How do they speak? What words do they use?"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Fears & Frustrations</label>
+                                    <textarea class="form-control" rows="3" placeholder="What keeps them up at night?"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Desires & Goals</label>
+                                    <textarea class="form-control" rows="3" placeholder="What are they trying to achieve?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercise-container">
+                    <div class="exercise-header">
+                        <h3>Exercise 2: "What They Don't Know" Mapping (25 minutes)</h3>
+                        <p>Map perceived vs actual needs for each archetype</p>
+                    </div>
+                    
+                    <div class="mapping-tool">
+                        <div class="mapping-columns">
+                            <div class="mapping-column">
+                                <h4>What They Think They Need</h4>
+                                <div class="drop-zone" id="perceived-needs">
+                                    <div class="draggable-item" draggable="true">Basic accounting setup</div>
+                                    <div class="draggable-item" draggable="true">Simple HR policies</div>
+                                    <div class="draggable-item" draggable="true">Office space</div>
+                                    <div class="draggable-item" draggable="true">IT equipment</div>
+                                    <div class="text-input-area">
+                                        <textarea class="form-control" rows="4" placeholder="Add perceived needs..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mapping-column">
+                                <h4>What They Actually Need</h4>
+                                <div class="drop-zone" id="actual-needs">
+                                    <div class="draggable-item" draggable="true">Strategic financial planning</div>
+                                    <div class="draggable-item" draggable="true">Comprehensive compliance framework</div>
+                                    <div class="draggable-item" draggable="true">Scalable operational systems</div>
+                                    <div class="draggable-item" draggable="true">Future-proofed infrastructure</div>
+                                    <div class="text-input-area">
+                                        <textarea class="form-control" rows="4" placeholder="Add actual needs..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Session 2: Service Bucket Alignment -->
+            <section id="session2" class="workshop-section">
+                <h2>Session 2: Service Bucket Alignment (40 minutes)</h2>
+                
+                <div class="exercise-container">
+                    <div class="exercise-header">
+                        <h3>Exercise 3: Service Mapping by Archetype (20 minutes)</h3>
+                        <p>Align services with growth stages and rank priorities</p>
+                    </div>
+                    
+                    <div class="service-mapping">
+                        <div class="growth-stages">
+                            <div class="stage-column">
+                                <h4>Incubator/Pre-Funding</h4>
+                                <div class="service-list" data-stage="pre-funding">
+                                    <div class="service-item" draggable="true">HR Strategy & Implementation</div>
+                                    <div class="service-item" draggable="true">IT Strategy & Setup</div>
+                                    <div class="service-item" draggable="true">Financial Operations</div>
+                                    <div class="service-item" draggable="true">Vendor Selection & Management</div>
+                                </div>
+                                <div class="priority-ranking">
+                                    <h5>Top 3 Critical Services:</h5>
+                                    <div class="priority-list" id="priority-pre-funding"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="stage-column">
+                                <h4>Newly Funded/First Office</h4>
+                                <div class="service-list" data-stage="first-office">
+                                    <div class="service-item" draggable="true">Facilities & Lab Management</div>
+                                    <div class="service-item" draggable="true">Real Estate & Build-out</div>
+                                    <div class="service-item" draggable="true">Office Management</div>
+                                    <div class="service-item" draggable="true">Process Optimization</div>
+                                </div>
+                                <div class="priority-ranking">
+                                    <h5>Top 3 Critical Services:</h5>
+                                    <div class="priority-list" id="priority-first-office"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="stage-column">
+                                <h4>Ready to Scale</h4>
+                                <div class="service-list" data-stage="scaling">
+                                    <div class="service-item" draggable="true">Strategic Planning</div>
+                                    <div class="service-item" draggable="true">Fractional Leadership</div>
+                                    <div class="service-item" draggable="true">Process Optimization</div>
+                                    <div class="service-item" draggable="true">Financial Operations</div>
+                                </div>
+                                <div class="priority-ranking">
+                                    <h5>Top 3 Critical Services:</h5>
+                                    <div class="priority-list" id="priority-scaling"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercise-container">
+                    <div class="exercise-header">
+                        <h3>Exercise 4: Empathy Mapping (20 minutes)</h3>
+                        <p>Map decision-maker perspectives for each archetype</p>
+                    </div>
+                    
+                    <div class="empathy-maps">
+                        <div class="empathy-map">
+                            <h4>Newly Funded Scientist</h4>
+                            <div class="empathy-grid">
+                                <div class="empathy-section">
+                                    <h5>💭 Thinking</h5>
+                                    <textarea class="form-control" rows="3" placeholder="What are they thinking?"></textarea>
+                                </div>
+                                <div class="empathy-section">
+                                    <h5>😟 Feeling</h5>
+                                    <textarea class="form-control" rows="3" placeholder="What emotions are they experiencing?"></textarea>
+                                </div>
+                                <div class="empathy-section">
+                                    <h5>👀 Seeing</h5>
+                                    <textarea class="form-control" rows="3" placeholder="What's their environment?"></textarea>
+                                </div>
+                                <div class="empathy-section">
+                                    <h5>🎯 Doing</h5>
+                                    <textarea class="form-control" rows="3" placeholder="What actions are they taking?"></textarea>
+                                </div>
+                                <div class="empathy-section pain-points">
+                                    <h5>⚠️ Pain Points</h5>
+                                    <textarea class="form-control" rows="3" placeholder="What problems are they facing?"></textarea>
+                                </div>
+                                <div class="empathy-section goals">
+                                    <h5>🎯 Goals</h5>
+                                    <textarea class="form-control" rows="3" placeholder="What success looks like?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Session 3: Website Structure Translation -->
+            <section id="session3" class="workshop-section">
+                <h2>Session 3: Website Structure Translation (20 minutes)</h2>
+                
+                <div class="exercise-container">
+                    <div class="exercise-header">
+                        <h3>Exercise 5: Client Journey Flow Design</h3>
+                        <p>Create archetype-based navigation and client journey flows</p>
+                    </div>
+                    
+                    <div class="journey-builder">
+                        <div class="flow-canvas">
+                            <h4>Homepage Flow Design</h4>
+                            <div class="flow-elements">
+                                <div class="flow-element" draggable="true">Hero Message</div>
+                                <div class="flow-element" draggable="true">Service Overview</div>
+                                <div class="flow-element" draggable="true">Client Stories</div>
+                                <div class="flow-element" draggable="true">Growth Stage Guide</div>
+                                <div class="flow-element" draggable="true">Contact CTA</div>
+                            </div>
+                            <div class="flow-workspace" id="flowWorkspace">
+                                <p class="placeholder-text">Drag elements here to design the homepage flow</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-study-linking">
+                            <h4>Case Study Alignment</h4>
+                            <div class="linking-pairs">
+                                <div class="case-study-item">
+                                    <span>Remix Therapeutics</span>
+                                    <select class="form-control">
+                                        <option value="">Select archetype...</option>
+                                        <option value="newly-funded">Newly Funded Scientist</option>
+                                        <option value="incubator">Incubator Graduate</option>
+                                        <option value="scaling">Scaling Biotech CEO</option>
+                                    </select>
+                                </div>
+                                <div class="case-study-item">
+                                    <span>Arrakis Therapeutics</span>
+                                    <select class="form-control">
+                                        <option value="">Select archetype...</option>
+                                        <option value="newly-funded">Newly Funded Scientist</option>
+                                        <option value="incubator">Incubator Graduate</option>
+                                        <option value="scaling">Scaling Biotech CEO</option>
+                                    </select>
+                                </div>
+                                <div class="case-study-item">
+                                    <span>Tree Frog Therapeutics</span>
+                                    <select class="form-control">
+                                        <option value="">Select archetype...</option>
+                                        <option value="newly-funded">Newly Funded Scientist</option>
+                                        <option value="incubator">Incubator Graduate</option>
+                                        <option value="scaling">Scaling Biotech CEO</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Session 4: Content Messaging Workshop -->
+            <section id="session4" class="workshop-section">
+                <h2>Session 4: Content Messaging Workshop (15 minutes)</h2>
+                
+                <div class="exercise-container">
+                    <div class="exercise-header">
+                        <h3>Exercise 6: Message Testing</h3>
+                        <p>Test headlines and language options for each archetype</p>
+                    </div>
+                    
+                    <div class="message-testing">
+                        <div class="headline-generator">
+                            <h4>Headline Testing</h4>
+                            <div class="archetype-messages">
+                                <div class="message-group">
+                                    <h5>Newly Funded Scientist</h5>
+                                    <div class="headline-options">
+                                        <div class="headline-option">
+                                            <input type="radio" name="headline-scientist" id="headline1">
+                                            <label for="headline1">"From funding to operations: We handle the details so you can focus on science"</label>
+                                        </div>
+                                        <div class="headline-option">
+                                            <input type="radio" name="headline-scientist" id="headline2">
+                                            <label for="headline2">"Operations infrastructure that grows with your discovery"</label>
+                                        </div>
+                                        <div class="custom-headline">
+                                            <input type="text" class="form-control" placeholder="Create custom headline...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="language-comparison">
+                            <h4>Language Comparison Tool</h4>
+                            <div class="language-options">
+                                <div class="language-column">
+                                    <h5>Operations Focus</h5>
+                                    <ul>
+                                        <li>Business operations</li>
+                                        <li>Operational infrastructure</li>
+                                        <li>Systems and processes</li>
+                                    </ul>
+                                </div>
+                                <div class="language-column">
+                                    <h5>G&A Team Focus</h5>
+                                    <ul>
+                                        <li>Administrative support</li>
+                                        <li>General & administrative</li>
+                                        <li>Corporate services</li>
+                                    </ul>
+                                </div>
+                                <div class="language-column">
+                                    <h5>Business Infrastructure</h5>
+                                    <ul>
+                                        <li>Foundation building</li>
+                                        <li>Growth enablement</li>
+                                        <li>Strategic framework</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="validation-checklist">
+                            <h4>Message Validation</h4>
+                            <div class="validation-questions">
+                                <div class="form-group">
+                                    <label class="form-label">Why do I need this? (Client perspective)</label>
+                                    <textarea class="form-control" rows="2" placeholder="Answer from the client's viewpoint..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">What will this solve? (Value proposition)</label>
+                                    <textarea class="form-control" rows="2" placeholder="Clear value and outcome..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Deliverables Dashboard -->
+            <section id="deliverables" class="workshop-section">
+                <h2>Deliverables Dashboard</h2>
+                
+                <div class="deliverables-grid">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Workshop Summary</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="summary-stats">
+                                <div class="stat">
+                                    <span class="stat-number">3</span>
+                                    <span class="stat-label">Client Archetypes Defined</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-label">Services Mapped</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">6</span>
+                                    <span class="stat-label">Exercises Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Key Deliverables</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="deliverable-list">
+                                <div class="deliverable-item">
+                                    <h4>Client Archetype Profiles</h4>
+                                    <p>Detailed personas with language, pain points, and goals</p>
+                                    <button class="btn btn--sm btn--outline">Export</button>
+                                </div>
+                                <div class="deliverable-item">
+                                    <h4>Service-Stage Mapping</h4>
+                                    <p>Services prioritized by growth stage and archetype needs</p>
+                                    <button class="btn btn--sm btn--outline">Export</button>
+                                </div>
+                                <div class="deliverable-item">
+                                    <h4>Website Structure Blueprint</h4>
+                                    <p>Homepage flow and navigation tailored to client journeys</p>
+                                    <button class="btn btn--sm btn--outline">Export</button>
+                                </div>
+                                <div class="deliverable-item">
+                                    <h4>Messaging Framework</h4>
+                                    <p>Tested headlines and language options for each archetype</p>
+                                    <button class="btn btn--sm btn--outline">Export</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>Next Steps</h3>
+                        </div>
+                        <div class="card__body">
+                            <div class="action-items">
+                                <div class="form-group">
+                                    <label class="form-label">Immediate Actions (This Week)</label>
+                                    <textarea class="form-control" rows="3" placeholder="What needs to be done immediately?"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Short-term Goals (Next Month)</label>
+                                    <textarea class="form-control" rows="3" placeholder="What are the next month priorities?"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Implementation Timeline</label>
+                                    <textarea class="form-control" rows="3" placeholder="When will these changes be implemented?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
