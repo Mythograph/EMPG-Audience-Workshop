@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact E.M. Perry Group to book a free consultation. We'd love to learn about your biotech startup and how we can help." />
+  <title>Contact | E.M. Perry Group</title>
+  <link rel="canonical" href="contact.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="14" cy="14" r="13" stroke="#1B4A42" stroke-width="2"/>
+        <path d="M8 20V8l6 8 6-8v12" stroke="#1B4A42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      E.M. Perry Group
+    </a>
+    <div class="nav__links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <div class="nav__dropdown">
+        <a href="case-studies/index.html">Our Work ▾</a>
+        <div class="nav__dropdown-menu">
+          <a href="case-studies/index.html">All Case Studies</a>
+          <a href="case-studies/remix.html">Remix Therapeutics</a>
+          <a href="case-studies/tree-frog.html">Tree Frog Therapeutics</a>
+          <a href="case-studies/arrakis.html">Arrakis Therapeutics</a>
+        </div>
+      </div>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn--primary nav__cta">Book a Free Consultation</a>
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="case-studies/index.html">Our Work</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="contact.html" class="btn btn--primary" style="margin-top:.5rem">Book a Free Consultation</a>
+</div>
+
+<main>
+
+<!-- ── Page Hero ───────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="container">
+    <span class="label label--light">Get in Touch</span>
+    <h1>Let's talk about your startup.</h1>
+    <p>Tell us where you are and where you want to go. We'll listen first, then share how we might help—no pressure, no pitch.</p>
+  </div>
+</section>
+
+<!-- ── Contact Section ─────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start">
+
+      <!-- Form -->
+      <div>
+        <h2 style="margin-bottom:.5rem">Book a Free Consultation</h2>
+        <p style="color:var(--text-mid);margin-bottom:2rem">Fill out the form and we'll be in touch within one business day.</p>
+
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" novalidate>
+          <input type="hidden" name="form-name" value="contact" />
+
+          <div class="form-group">
+            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="Jane Smith" autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Work Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="jane@yourcompany.com" autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Acme Therapeutics" autocomplete="organization" />
+          </div>
+
+          <div class="form-group">
+            <label for="stage">Startup Stage</label>
+            <select id="stage" name="stage">
+              <option value="" disabled selected>Select your stage</option>
+              <option value="seed">Seed / Pre-Series A</option>
+              <option value="series-a">Series A</option>
+              <option value="series-b">Series B</option>
+              <option value="series-b-plus">Series B+</option>
+              <option value="other">Other / Not sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="service">How can we help?</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service area</option>
+              <option value="strategic-mapping">Strategic Operational Mapping</option>
+              <option value="infrastructure-eval">G&amp;A Infrastructure Evaluation</option>
+              <option value="complete-setup">Complete G&amp;A Setup</option>
+              <option value="project-implementation">Project Implementation</option>
+              <option value="office-management">Office &amp; Infrastructure Management</option>
+              <option value="fractional">Fractional / Consulting</option>
+              <option value="not-sure">Not sure — let's talk</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell us about your situation <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required rows="5" placeholder="Brief description of where you are and what's top of mind…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Send Message</button>
+          <p style="font-size:.83rem;color:var(--text-light);margin-top:.75rem;text-align:center">We'll respond within one business day.</p>
+        </form>
+      </div>
+
+      <!-- Direct contact + details -->
+      <div style="display:flex;flex-direction:column;gap:2.5rem">
+
+        <div>
+          <h3 style="margin-bottom:1.25rem">Contact Emily directly</h3>
+          <div style="display:flex;flex-direction:column;gap:1rem">
+            <a href="mailto:emily@emperrygroup.com" class="contact-detail">
+              <span class="contact-detail__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              emily@emperrygroup.com
+            </a>
+            <a href="tel:6039989908" class="contact-detail">
+              <span class="contact-detail__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.77-1.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              603-998-9908
+            </a>
+            <div class="contact-detail">
+              <span class="contact-detail__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              Boston, MA (serving clients nationally)
+            </div>
+            <a href="https://www.linkedin.com/company/em-perry-group" target="_blank" rel="noopener" class="contact-detail">
+              <span class="contact-detail__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </span>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="border-left:4px solid var(--green-mid);border-radius:0 var(--radius-md) var(--radius-md) 0">
+          <h4 style="margin-bottom:.5rem">What to expect</h4>
+          <ul class="check-list" style="margin-top:.75rem">
+            <li>A response within one business day</li>
+            <li>A 30-minute discovery call to learn about your needs</li>
+            <li>Honest feedback on whether we're the right fit</li>
+            <li>No pressure, no hard sell</li>
+          </ul>
+        </div>
+
+        <div class="card" style="background:var(--green-pale)">
+          <p style="font-size:.95rem;color:var(--text-mid);margin-bottom:.5rem">Operational Mentor to the</p>
+          <p style="font-weight:600;color:var(--text-dark)">Harvard Business School Blavatnik Fellowship in Life Science Entrepreneurship</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── Footer ──────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="14" cy="14" r="13" stroke="white" stroke-width="2"/>
+            <path d="M8 20V8l6 8 6-8v12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          E.M. Perry Group
+        </div>
+        <p class="footer__tagline">Comprehensive G&A operational support for early-stage biotech startups—so you can focus on the science that matters.</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/company/em-perry-group" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="about.html#founder">Emily Perry</a></li>
+          <li><a href="about.html#approach">Our Approach</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="services.html#stage1">Newly Funded</a></li>
+          <li><a href="services.html#stage2">Incubator to Independence</a></li>
+          <li><a href="services.html#stage3">Ready to Scale</a></li>
+          <li><a href="contact.html">Book a Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer__col footer__contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:emily@emperrygroup.com">emily@emperrygroup.com</a></p>
+        <p><a href="tel:6039989908">603-998-9908</a></p>
+        <p>Boston, MA</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 E.M. Perry Group. All rights reserved.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
