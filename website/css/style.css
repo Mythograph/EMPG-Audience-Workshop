@@ -150,11 +150,6 @@ p:last-child { margin-bottom: 0; }
 .nav__logo {
   display: flex;
   align-items: center;
-  gap: .6rem;
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--green-dark);
   flex-shrink: 0;
 }
 .nav__logo svg { flex-shrink: 0; }
@@ -268,11 +263,6 @@ p:last-child { margin-bottom: 0; }
 .footer__logo {
   display: flex;
   align-items: center;
-  gap: .6rem;
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--white);
 }
 .footer__tagline { font-size: .9rem; line-height: 1.6; color: rgba(255,255,255,.65); }
 .footer__col h4 {
