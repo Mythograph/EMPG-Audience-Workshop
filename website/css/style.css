@@ -12,6 +12,10 @@
   --green-light:  #5A9E96;
   --green-pale:   #E8F2F1;
   --green-btn:    #2C6B62;
+  --teal:         #5AADA8;
+  --teal-pale:    #E6F5F4;
+  --gold:         #BF8F5E;
+  --gold-pale:    #F7EDDF;
   --cream:        #F7F7F5;
   --text-dark:    #1A2B28;
   --text-mid:     #4A5E5A;
@@ -60,7 +64,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--green-mid);
+  color: var(--teal);
   margin-bottom: .75rem;
   display: block;
 }
@@ -72,7 +76,7 @@ p:last-child { margin-bottom: 0; }
 .section--cream { background: var(--cream); }
 .section--dark { background: var(--green-dark); color: var(--white); }
 .section--dark h1, .section--dark h2, .section--dark h3, .section--dark h4 { color: var(--white); }
-.section--pale { background: var(--green-pale); }
+.section--pale { background: var(--teal-pale); }
 
 .section-header { margin-bottom: 56px; }
 .section-header h2 { margin-bottom: .5rem; }
@@ -87,7 +91,7 @@ p:last-child { margin-bottom: 0; }
   display: block;
   width: 48px;
   height: 3px;
-  background: var(--green-light);
+  background: var(--gold);
   margin-top: 12px;
 }
 .accent-line--center::after { margin: 12px auto 0; }
@@ -172,7 +176,7 @@ p:last-child { margin-bottom: 0; }
   bottom: -4px;
   left: 0; right: 0;
   height: 2px;
-  background: var(--green-light);
+  background: var(--gold);
   border-radius: 2px;
 }
 /* Dropdown */
@@ -314,7 +318,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ── Hero ───────────────────────────────────────────────────── */
 .hero {
-  background: linear-gradient(135deg, var(--green-dark) 0%, #2a6b62 50%, #1a3d38 100%);
+  background: linear-gradient(135deg, var(--green-dark) 0%, #2a6b62 45%, var(--teal) 100%);
   color: var(--white);
   padding: 120px 0 100px;
   position: relative;
@@ -345,10 +349,10 @@ p:last-child { margin-bottom: 0; }
 .card__icon {
   width: 48px; height: 48px;
   border-radius: var(--radius-sm);
-  background: var(--green-pale);
+  background: var(--teal-pale);
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 1.25rem;
-  color: var(--green-mid);
+  color: var(--teal);
 }
 .card h3 { margin-bottom: .5rem; font-size: 1.15rem; }
 .card .card__teaser {
@@ -475,7 +479,7 @@ p:last-child { margin-bottom: 0; }
 .case-meta__item:last-child { border-right: none; }
 .case-meta__label { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--text-light); margin-bottom: .25rem; }
 .case-meta__value { font-size: .95rem; font-weight: 600; color: var(--text-dark); }
-.case-meta__value--accent { color: var(--green-mid); }
+.case-meta__value--accent { color: var(--teal); }
 
 .case-section { margin-bottom: 3rem; }
 .case-section h2 { margin-bottom: 1.25rem; }
@@ -501,10 +505,10 @@ p:last-child { margin-bottom: 0; }
 
 /* ── Stat cards ─────────────────────────────────────────────── */
 .stat-card {
-  border-left: 3px solid var(--green-mid);
+  border-left: 3px solid var(--gold);
   padding: 1rem 1.25rem;
 }
-.stat-card .stat { font-family: var(--font-head); font-size: 2.5rem; font-weight: 700; color: var(--green-dark); line-height: 1; margin-bottom: .25rem; }
+.stat-card .stat { font-family: var(--font-head); font-size: 2.5rem; font-weight: 700; color: var(--teal); line-height: 1; margin-bottom: .25rem; }
 .stat-card p { font-size: .88rem; color: var(--text-mid); }
 
 /* ── Service chips ──────────────────────────────────────────── */
@@ -557,8 +561,8 @@ p:last-child { margin-bottom: 0; }
 .modal h2 { margin-bottom: 1rem; font-size: 1.5rem; }
 .modal p { color: var(--text-mid); margin-bottom: 1rem; }
 .modal__callout {
-  background: var(--green-pale);
-  border-left: 3px solid var(--green-mid);
+  background: var(--gold-pale);
+  border-left: 3px solid var(--gold);
   padding: 1rem 1.25rem;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   margin: 1.25rem 0;
@@ -606,16 +610,14 @@ p:last-child { margin-bottom: 0; }
 }
 .approach-card__num {
   font-family: var(--font-head);
-  font-size: 2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: var(--green-pale);
-  background: var(--green-dark);
+  color: var(--white);
+  background: var(--teal);
   width: 52px; height: 52px;
   border-radius: var(--radius-sm);
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 1.25rem;
-  font-size: 1.1rem;
-  color: var(--white);
 }
 .approach-card h3 { margin-bottom: .5rem; }
 .approach-card p { font-size: .92rem; color: var(--text-mid); }
@@ -639,8 +641,8 @@ p:last-child { margin-bottom: 0; }
 .form-group textarea:focus,
 .form-group select:focus {
   outline: none;
-  border-color: var(--green-mid);
-  box-shadow: 0 0 0 3px rgba(90,158,150,.15);
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(90,173,168,.15);
 }
 .form-group textarea { min-height: 130px; resize: vertical; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
