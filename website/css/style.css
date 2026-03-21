@@ -804,6 +804,22 @@ p:last-child { margin-bottom: 0; }
 .related-projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 @media (max-width: 600px) { .related-projects { grid-template-columns: 1fr; } }
 
+/* ── Photo strip (full-width image break between sections) ───── */
+.photo-strip {
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.photo-strip::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(27,74,66,0.15);
+}
+@media (max-width: 768px) { .photo-strip { height: 220px; } }
+
 /* ── Page hero (interior pages) ─────────────────────────────── */
 .page-hero {
   background: linear-gradient(135deg, var(--green-dark) 0%, #2a6b62 100%);
